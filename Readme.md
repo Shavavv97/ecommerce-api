@@ -26,7 +26,7 @@ This route is for get all the customer registered in the API
 This route is for create a new customer.
 You should enter a JSON for in the post, example:
 
-```python
+```JSON
 {
     "name": "NAME",
     "email": "EMAIL@DOMAIN.COM",
