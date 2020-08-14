@@ -13,7 +13,7 @@ python -m venv env
 
 Start the virtual enviroment
 ```bash
-source venv/Scripts/activate
+source env/Scripts/activate
 ```
 
 Install the requirements
