@@ -6,11 +6,33 @@ This is an Ecommerce API.
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the following:
 
+Create a virtual enviroment
+```bash
+python -m venv env
+```
+
+Start the virtual enviroment
+```bash
+source venv/Scripts/activate
+```
+
+Install the requirements
 ```bash
 pip install -r requirements.txt
 ```
-Start the aplication
 
+Handle the migrations
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+Create a superuser
+```bash
+python manage.py createsuperuser
+```
+
+Start the aplication
 ```bash
 python manage.py runserver
 ```
@@ -31,7 +53,7 @@ You should enter a JSON for in the post, example:
     "name": "NAME",
     "email": "EMAIL@DOMAIN.COM",
     "phone": "PHONE",
-    "password": "password"
+    "password": "PASSWORD"
 }
 ```
 
